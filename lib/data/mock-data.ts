@@ -1,0 +1,372 @@
+import { SiteSettings, Category, Product, Banner, Enquiry } from "@/types";
+
+export const initialSiteSettings: SiteSettings = {
+  id: "a1111111-1111-1111-1111-111111111111",
+  shop_name: "Sai Furniture",
+  tagline: "Handcrafted Living & Luxury Wooden Elegance",
+  phone: "+91 98765 43210",
+  whatsapp: "919876543210",
+  email: "enquiry@saifurniturenavegaon.in",
+  address: "Main Road, Near Old Bus Stand, Navegaon",
+  city: "Navegaon, Gadchiroli",
+  state: "Maharashtra",
+  pincode: "441201",
+  google_maps_embed_url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3744.123456789!2d79.912345!3d20.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDA3JzI0LjQiTiA3OcKwNTQnNDQuNCJF!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin",
+  business_hours: "Monday - Sunday: 9:00 AM - 8:30 PM",
+  hero_title: "Mastercrafted Furniture Designed for Lifetime Comfort",
+  hero_subtitle: "Discover Navegaon & Gadchiroli's finest teakwood beds, luxury sofa lounges, bespoke dining sets, and modern storage furniture built with timeless craftsmanship.",
+};
+
+export const initialCategories: Category[] = [
+  {
+    id: "c1111111-1111-1111-1111-111111111111",
+    name: "Living Room & Sofas",
+    slug: "living-room-sofas",
+    description: "Premium L-shaped sectionals, velvet recliners, solid wood sofa sets, and coffee tables.",
+    image_url: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1000&q=80",
+    display_order: 1,
+    is_active: true,
+  },
+  {
+    id: "c2222222-2222-2222-2222-222222222222",
+    name: "Beds & Bedroom Sets",
+    slug: "beds-bedroom-sets",
+    description: "King and Queen solid teakwood beds, hydraulic storage beds, and nightstands.",
+    image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=80",
+    display_order: 2,
+    is_active: true,
+  },
+  {
+    id: "c3333333-3333-3333-3333-333333333333",
+    name: "Dining Tables & Chairs",
+    slug: "dining-tables-chairs",
+    description: "4-seater, 6-seater, and 8-seater solid wood and marble-finish luxury dining ensembles.",
+    image_url: "https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1000&q=80",
+    display_order: 3,
+    is_active: true,
+  },
+  {
+    id: "c4444444-4444-4444-4444-444444444444",
+    name: "Wardrobes & Storage",
+    slug: "wardrobes-storage",
+    description: "Engineered wood & pure teak sliding wardrobes, almirahs, and chest of drawers.",
+    image_url: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=1000&q=80",
+    display_order: 4,
+    is_active: true,
+  },
+  {
+    id: "c5555555-5555-5555-5555-555555555555",
+    name: "TV Units & Consoles",
+    slug: "tv-units-consoles",
+    description: "Floating entertainment centers, media consoles, and display showcases.",
+    image_url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80",
+    display_order: 5,
+    is_active: true,
+  },
+  {
+    id: "c6666666-6666-6666-6666-666666666666",
+    name: "Office & Study Desks",
+    slug: "office-study-desks",
+    description: "Ergonomic executive desks, book racks, and ergonomic conference seating.",
+    image_url: "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=1000&q=80",
+    display_order: 6,
+    is_active: true,
+  },
+  {
+    id: "c7777777-7777-7777-7777-777777777777",
+    name: "Custom & Bespoke Orders",
+    slug: "custom-bespoke-furniture",
+    description: "Tailored wooden masterpieces made to your exact measurements, timber choice, and polish.",
+    image_url: "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=1000&q=80",
+    display_order: 7,
+    is_active: true,
+  }
+];
+
+export const initialBanners: Banner[] = [
+  {
+    id: "b1111111-1111-1111-1111-111111111111",
+    title: "The Royal Teakwood Collection",
+    subtitle: "Handcrafted solid wood bedroom sets built for generations of warmth and luxury in Vidarbha.",
+    badge: "Festive Showroom Edition",
+    cta_text: "Explore Bedroom Sets",
+    cta_link: "/categories/beds-bedroom-sets",
+    image_url: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1600&q=85",
+    is_active: true,
+    display_order: 1,
+  },
+  {
+    id: "b2222222-2222-2222-2222-222222222222",
+    title: "Artisan Living Room Lounges",
+    subtitle: "High-density foam comfort wrapped in premium stain-resistant velvet and natural teak accents.",
+    badge: "Bespoke Sofas",
+    cta_text: "View Sofas & Sectionals",
+    cta_link: "/categories/living-room-sofas",
+    image_url: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1600&q=85",
+    is_active: true,
+    display_order: 2,
+  },
+  {
+    id: "b3333333-3333-3333-3333-333333333333",
+    title: "Custom Furniture Made To Measure",
+    subtitle: "Have a specific design in mind? Visit our Navegaon showroom or WhatsApp your room layout for a custom quote.",
+    badge: "Local Craftsmanship",
+    cta_text: "Enquire Custom Design",
+    cta_link: "/contact",
+    image_url: "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=1600&q=85",
+    is_active: true,
+    display_order: 3,
+  }
+];
+
+export const initialProducts: Product[] = [
+  {
+    id: "p1111111-1111-1111-1111-111111111111",
+    category_id: "c2222222-2222-2222-2222-222222222222",
+    name: "Maharaja Teakwood King Size Hydraulic Bed",
+    slug: "maharaja-teakwood-king-bed",
+    short_description: "Premium solid teakwood king bed with hydraulic lift-up storage and cushioned velvet headboard.",
+    description: "Crafted from seasoned Grade-A CP Teakwood, the Maharaja King Bed combines regal traditional woodwork with effortless modern functionality. Features high-load gas-lift hydraulic storage underneath, reinforced internal framing, and an ergonomic upholstered tufted headboard for superior back support while reading.",
+    material: "Grade-A Seasoned Teak Wood, German Hydraulic Gas-Lifts, Premium Upholstery",
+    dimensions: "78\" L x 72\" W x 48\" H (Mattress size: 72\" x 78\")",
+    color_options: ["Natural Teak Gloss", "Walnut Matte", "Dark Mahogany"],
+    price_type: "starting_at",
+    price: 42000,
+    price_max: null,
+    is_featured: true,
+    is_new_arrival: true,
+    is_active: true,
+    images: [
+      {
+        id: "img-1",
+        image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+        alt_text: "Maharaja Teakwood King Bed Main View",
+        is_cover: true,
+        display_order: 1,
+      },
+      {
+        id: "img-2",
+        image_url: "https://images.unsplash.com/photo-1540518614846-7ede433c4ef7?auto=format&fit=crop&w=1200&q=80",
+        alt_text: "Headboard detail and polish",
+        is_cover: false,
+        display_order: 2,
+      },
+      {
+        id: "img-3",
+        image_url: "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=80",
+        alt_text: "Room ambiance view",
+        is_cover: false,
+        display_order: 3,
+      }
+    ]
+  },
+  {
+    id: "p2222222-2222-2222-2222-222222222222",
+    category_id: "c1111111-1111-1111-1111-111111111111",
+    name: "Imperial 7-Seater L-Shape Sectional Sofa",
+    slug: "imperial-7-seater-sectional-sofa",
+    short_description: "Ultra-comfortable luxury living room sectional sofa with high-density 40D foam and stain-guard fabric.",
+    description: "Elevate your family gatherings with our flagship 7-seater sectional. Constructed around a heavy-duty Salwood and Marandi wood frame with anti-sag zig-zag steel springs and 40-density HR foam cushioning. Includes 5 complimentary matching toss pillows and detachable cushion covers for easy maintenance.",
+    material: "Seasoned Salwood Inner Frame, 40-Density HR Foam, Velvet Chenille Fabric",
+    dimensions: "108\" L x 84\" Depth x 34\" H",
+    color_options: ["Emerald Green", "Royal Navy Blue", "Warm Sand Beige", "Charcoal Grey"],
+    price_type: "starting_at",
+    price: 38500,
+    price_max: null,
+    is_featured: true,
+    is_new_arrival: true,
+    is_active: true,
+    images: [
+      {
+        id: "img-4",
+        image_url: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80",
+        alt_text: "Imperial Sectional Sofa Living Room",
+        is_cover: true,
+        display_order: 1,
+      },
+      {
+        id: "img-5",
+        image_url: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1200&q=80",
+        alt_text: "Seating fabric and armrest detail",
+        is_cover: false,
+        display_order: 2,
+      }
+    ]
+  },
+  {
+    id: "p3333333-3333-3333-3333-333333333333",
+    category_id: "c3333333-3333-3333-3333-333333333333",
+    name: "Heritage Sheesham 6-Seater Dining Ensemble",
+    slug: "heritage-sheesham-6-seater-dining-table",
+    short_description: "Solid Sheesham wood 6-seater dining set with ergonomic cushioned chairs and heat-resistant polish.",
+    description: "A masterclass in solid wood carpentry. The Heritage 6-Seater dining table features natural wood grain patterns, robust 4x4 inch solid legs, and 6 matching high-back chairs with premium cushioned seating for comfortable long family dinners.",
+    material: "100% Solid Indian Sheesham (Rosewood) with Melamine Heat-Proof Polish",
+    dimensions: "Table: 60\" L x 36\" W x 30\" H | Chairs: 18\" W x 18\" D x 38\" H",
+    color_options: ["Natural Honey Polish", "Dark Walnut", "Teak Gloss"],
+    price_type: "starting_at",
+    price: 34000,
+    price_max: null,
+    is_featured: true,
+    is_new_arrival: false,
+    is_active: true,
+    images: [
+      {
+        id: "img-6",
+        image_url: "https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1200&q=80",
+        alt_text: "Heritage Sheesham Dining Ensemble",
+        is_cover: true,
+        display_order: 1,
+      },
+      {
+        id: "img-7",
+        image_url: "https://images.unsplash.com/photo-1577140917170-285929fb55b7?auto=format&fit=crop&w=1200&q=80",
+        alt_text: "Dining Table Top and Wood Grain Detail",
+        is_cover: false,
+        display_order: 2,
+      }
+    ]
+  },
+  {
+    id: "p4444444-4444-4444-4444-444444444444",
+    category_id: "c4444444-4444-4444-4444-444444444444",
+    name: "Grand 4-Door Wardrobe with Mirror & Soft-Close",
+    slug: "grand-4-door-sliding-wardrobe",
+    short_description: "Spacious master bedroom wardrobe with dual hanging rods, 4 security drawers, and vanity mirror.",
+    description: "Organize your garments in sheer elegance. Built with waterproof Action TESA HDHMR boards with anti-termite treatment, heavy-duty soft-close hinges, internal LED sensor illumination slots, and dual digital locker compartments.",
+    material: "High-Density Moisture-Resistant HDHMR Board + Acrylic Laminate Finish",
+    dimensions: "84\" H x 72\" W x 24\" Depth",
+    color_options: ["Smoked Oak & Champagne Gold", "Gloss White & Walnut", "Rustic Teak"],
+    price_type: "starting_at",
+    price: 45000,
+    price_max: null,
+    is_featured: false,
+    is_new_arrival: true,
+    is_active: true,
+    images: [
+      {
+        id: "img-8",
+        image_url: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=1200&q=80",
+        alt_text: "Grand 4-Door Wardrobe Front",
+        is_cover: true,
+        display_order: 1,
+      },
+      {
+        id: "img-9",
+        image_url: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=1200&q=80",
+        alt_text: "Wardrobe interior layout preview",
+        is_cover: false,
+        display_order: 2,
+      }
+    ]
+  },
+  {
+    id: "p5555555-5555-5555-5555-555555555555",
+    category_id: "c5555555-5555-5555-5555-555555555555",
+    name: "Nordic Floating TV Entertainment Console with Backlit Panel",
+    slug: "nordic-floating-tv-console",
+    short_description: "Modern wall-mounted TV console with fluted wood paneling, concealed wire management, and ambient LED channel.",
+    description: "Designed for modern living rooms accommodating up to 75-inch televisions. Features fluted wooden acoustic paneling, soft-push drop-down drawers for set-top boxes and gaming consoles, and integrated cable organization channels.",
+    material: "BWR Grade Marine Plywood, Charcoal Matte & Natural Oak Veneer",
+    dimensions: "72\" W x 14\" D x 58\" Total Height",
+    color_options: ["Natural Oak & Charcoal Fluted", "Walnut & Matte Gold", "All-White Gloss"],
+    price_type: "starting_at",
+    price: 18500,
+    price_max: null,
+    is_featured: true,
+    is_new_arrival: false,
+    is_active: true,
+    images: [
+      {
+        id: "img-10",
+        image_url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        alt_text: "Nordic TV Console Wall Unit",
+        is_cover: true,
+        display_order: 1,
+      },
+      {
+        id: "img-11",
+        image_url: "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&w=1200&q=80",
+        alt_text: "Console storage detail",
+        is_cover: false,
+        display_order: 2,
+      }
+    ]
+  },
+  {
+    id: "p6666666-6666-6666-6666-666666666666",
+    category_id: "c6666666-6666-6666-6666-666666666666",
+    name: "Executive Solid Wood Study & Work Desk",
+    slug: "executive-solid-wood-office-desk",
+    short_description: "Ergonomic workstation with side pedestal drawers, laptop ventilation cutout, and solid wooden legs.",
+    description: "Built for productivity, study, and executive offices. Features a wide scratch-resistant wooden surface, 3 side lockable drawers, cable grommet, and heavy solid wood joinery.",
+    material: "Seasoned Teak Wood Frame & High-Grade Plywood Top",
+    dimensions: "48\" L x 24\" W x 30\" H",
+    color_options: ["Rich Teak Polish", "Ebony Black & Oak"],
+    price_type: "starting_at",
+    price: 14500,
+    price_max: null,
+    is_featured: false,
+    is_new_arrival: true,
+    is_active: true,
+    images: [
+      {
+        id: "img-12",
+        image_url: "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=1200&q=80",
+        alt_text: "Executive Study Desk",
+        is_cover: true,
+        display_order: 1,
+      }
+    ]
+  },
+  {
+    id: "p7777777-7777-7777-7777-777777777777",
+    category_id: "c7777777-7777-7777-7777-777777777777",
+    name: "Handcrafted Teakwood Home Mandir / Pooja Unit",
+    slug: "handcrafted-teakwood-home-mandir",
+    short_description: "Exquisite carved pooja unit with bell motifs, warm LED lighting, brass accents, and pooja samagri drawers.",
+    description: "Bring spiritual peace and traditional Indian wooden art into your home. Each pooja unit is carved by expert artisans in Navegaon using pure teak wood, complete with OM / Gayatri laser cut backlighting, brass bell hangings, and heavy pull-out bhog trays.",
+    material: "Pure Burma / CP Teak Wood with Antique Gold Brass Fittings",
+    dimensions: "Custom Dimensions (Standard: 48\" W x 24\" D x 66\" H)",
+    color_options: ["Traditional Teak Gold", "Dark Walnut & Brass"],
+    price_type: "contact_for_price",
+    price: null,
+    price_max: null,
+    is_featured: true,
+    is_new_arrival: false,
+    is_active: true,
+    images: [
+      {
+        id: "img-13",
+        image_url: "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=1200&q=80",
+        alt_text: "Handcrafted Custom Wooden Unit",
+        is_cover: true,
+        display_order: 1,
+      }
+    ]
+  }
+];
+
+export const initialEnquiries: Enquiry[] = [
+  {
+    id: "enq-1",
+    name: "Ramesh Sharma",
+    phone: "9823012345",
+    email: "ramesh.sharma@gmail.com",
+    product_id: "p1111111-1111-1111-1111-111111111111",
+    product_name: "Maharaja Teakwood King Size Hydraulic Bed",
+    message: "Hi, I live in Gadchiroli town. Do you offer home delivery and installation for this hydraulic bed?",
+    status: "new",
+    created_at: new Date(Date.now() - 3600000 * 4).toISOString(),
+  },
+  {
+    id: "enq-2",
+    name: "Priya Deshmukh",
+    phone: "9422156789",
+    email: "priya.deshmukh@yahoo.com",
+    product_id: "p2222222-2222-2222-2222-222222222222",
+    product_name: "Imperial 7-Seater L-Shape Sectional Sofa",
+    message: "Can we customize the fabric color to Royal Navy Blue with velvet texture?",
+    status: "contacted",
+    created_at: new Date(Date.now() - 3600000 * 24).toISOString(),
+  }
+];
