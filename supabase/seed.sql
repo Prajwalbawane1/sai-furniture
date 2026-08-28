@@ -45,7 +45,7 @@ ON CONFLICT (id) DO NOTHING;
 INSERT INTO products (
     id, category_id, name, slug, short_description, description, material, dimensions, color_options, price_type, price, price_max, is_featured, is_new_arrival, is_active
 ) VALUES (
-    'p1111111-1111-1111-1111-111111111111',
+    'd1111111-1111-1111-1111-111111111111',
     'c2222222-2222-2222-2222-222222222222',
     'Maharaja Teakwood King Size Hydraulic Bed',
     'maharaja-teakwood-king-bed',
@@ -63,15 +63,15 @@ INSERT INTO products (
 ) ON CONFLICT (id) DO NOTHING;
 
 INSERT INTO product_images (product_id, image_url, alt_text, is_cover, display_order) VALUES
-('p1111111-1111-1111-1111-111111111111', 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80', 'Maharaja Teakwood King Bed Main View', true, 1),
-('p1111111-1111-1111-1111-111111111111', 'https://images.unsplash.com/photo-1540518614846-7ede433c4ef7?auto=format&fit=crop&w=1200&q=80', 'Headboard detail and polish', false, 2),
-('p1111111-1111-1111-1111-111111111111', 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=80', 'Room ambiance view', false, 3);
+('d1111111-1111-1111-1111-111111111111', 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80', 'Maharaja Teakwood King Bed Main View', true, 1),
+('d1111111-1111-1111-1111-111111111111', 'https://images.unsplash.com/photo-1540518614846-7ede433c4ef7?auto=format&fit=crop&w=1200&q=80', 'Headboard detail and polish', false, 2),
+('d1111111-1111-1111-1111-111111111111', 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=80', 'Room ambiance view', false, 3);
 
 -- Product 2: Imperial L-Shape Velvet Sectional
 INSERT INTO products (
     id, category_id, name, slug, short_description, description, material, dimensions, color_options, price_type, price, price_max, is_featured, is_new_arrival, is_active
 ) VALUES (
-    'p2222222-2222-2222-2222-222222222222',
+    'd2222222-2222-2222-2222-222222222222',
     'c1111111-1111-1111-1111-111111111111',
     'Imperial 7-Seater L-Shape Sectional Sofa',
     'imperial-7-seater-sectional-sofa',
@@ -89,14 +89,14 @@ INSERT INTO products (
 ) ON CONFLICT (id) DO NOTHING;
 
 INSERT INTO product_images (product_id, image_url, alt_text, is_cover, display_order) VALUES
-('p2222222-2222-2222-2222-222222222222', 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80', 'Imperial Sectional Sofa Living Room', true, 1),
-('p2222222-2222-2222-2222-222222222222', 'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1200&q=80', 'Seating fabric and armrest detail', false, 2);
+('d2222222-2222-2222-2222-222222222222', 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80', 'Imperial Sectional Sofa Living Room', true, 1),
+('d2222222-2222-2222-2222-222222222222', 'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1200&q=80', 'Seating fabric and armrest detail', false, 2);
 
 -- Product 3: Sheesham 6-Seater Royal Dining Table
 INSERT INTO products (
     id, category_id, name, slug, short_description, description, material, dimensions, color_options, price_type, price, price_max, is_featured, is_new_arrival, is_active
 ) VALUES (
-    'p3333333-3333-3333-3333-333333333333',
+    'd3333333-3333-3333-3333-333333333333',
     'c3333333-3333-3333-3333-333333333333',
     'Heritage Sheesham 6-Seater Dining Ensemble',
     'heritage-sheesham-6-seater-dining-table',
@@ -114,14 +114,14 @@ INSERT INTO products (
 ) ON CONFLICT (id) DO NOTHING;
 
 INSERT INTO product_images (product_id, image_url, alt_text, is_cover, display_order) VALUES
-('p3333333-3333-3333-3333-333333333333', 'https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1200&q=80', 'Heritage Sheesham Dining Ensemble', true, 1),
-('p3333333-3333-3333-3333-333333333333', 'https://images.unsplash.com/photo-1577140917170-285929fb55b7?auto=format&fit=crop&w=1200&q=80', 'Dining Table Top and Wood Grain Detail', false, 2);
+('d3333333-3333-3333-3333-333333333333', 'https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1200&q=80', 'Heritage Sheesham Dining Ensemble', true, 1),
+('d3333333-3333-3333-3333-333333333333', 'https://images.unsplash.com/photo-1577140917170-285929fb55b7?auto=format&fit=crop&w=1200&q=80', 'Dining Table Top and Wood Grain Detail', false, 2);
 
 -- Product 4: Grand 4-Door Sliding Wardrobe
 INSERT INTO products (
     id, category_id, name, slug, short_description, description, material, dimensions, color_options, price_type, price, price_max, is_featured, is_new_arrival, is_active
 ) VALUES (
-    'p4444444-4444-4444-4444-444444444444',
+    'd4444444-4444-4444-4444-444444444444',
     'c4444444-4444-4444-4444-444444444444',
     'Grand 4-Door Wardrobe with Full-Length Mirror & Soft-Close',
     'grand-4-door-sliding-wardrobe',
@@ -139,14 +139,14 @@ INSERT INTO products (
 ) ON CONFLICT (id) DO NOTHING;
 
 INSERT INTO product_images (product_id, image_url, alt_text, is_cover, display_order) VALUES
-('p4444444-4444-4444-4444-444444444444', 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=1200&q=80', 'Grand 4-Door Wardrobe Front', true, 1),
-('p4444444-4444-4444-4444-444444444444', 'https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=1200&q=80', 'Wardrobe interior layout preview', false, 2);
+('d4444444-4444-4444-4444-444444444444', 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=1200&q=80', 'Grand 4-Door Wardrobe Front', true, 1),
+('d4444444-4444-4444-4444-444444444444', 'https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&w=1200&q=80', 'Wardrobe interior layout preview', false, 2);
 
 -- Product 5: Nordic Floating TV Entertainment Console
 INSERT INTO products (
     id, category_id, name, slug, short_description, description, material, dimensions, color_options, price_type, price, price_max, is_featured, is_new_arrival, is_active
 ) VALUES (
-    'p5555555-5555-5555-5555-555555555555',
+    'd5555555-5555-5555-5555-555555555555',
     'c5555555-5555-5555-5555-555555555555',
     'Nordic Floating TV Entertainment Console with Backlit Panel',
     'nordic-floating-tv-console',
@@ -164,14 +164,14 @@ INSERT INTO products (
 ) ON CONFLICT (id) DO NOTHING;
 
 INSERT INTO product_images (product_id, image_url, alt_text, is_cover, display_order) VALUES
-('p5555555-5555-5555-5555-555555555555', 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80', 'Nordic TV Console Wall Unit', true, 1),
-('p5555555-5555-5555-5555-555555555555', 'https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&w=1200&q=80', 'Console storage detail', false, 2);
+('d5555555-5555-5555-5555-555555555555', 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80', 'Nordic TV Console Wall Unit', true, 1),
+('d5555555-5555-5555-5555-555555555555', 'https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&w=1200&q=80', 'Console storage detail', false, 2);
 
 -- Product 6: Executive Solid Wood Study & Office Desk
 INSERT INTO products (
     id, category_id, name, slug, short_description, description, material, dimensions, color_options, price_type, price, price_max, is_featured, is_new_arrival, is_active
 ) VALUES (
-    'p6666666-6666-6666-6666-666666666666',
+    'd6666666-6666-6666-6666-666666666666',
     'c6666666-6666-6666-6666-666666666666',
     'Executive Solid Wood Study & Work Desk',
     'executive-solid-wood-office-desk',
@@ -189,13 +189,13 @@ INSERT INTO products (
 ) ON CONFLICT (id) DO NOTHING;
 
 INSERT INTO product_images (product_id, image_url, alt_text, is_cover, display_order) VALUES
-('p6666666-6666-6666-6666-666666666666', 'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=1200&q=80', 'Executive Study Desk', true, 1);
+('d6666666-6666-6666-6666-666666666666', 'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=1200&q=80', 'Executive Study Desk', true, 1);
 
 -- Product 7: Bespoke Custom Mandir / Pooja Unit
 INSERT INTO products (
     id, category_id, name, slug, short_description, description, material, dimensions, color_options, price_type, price, price_max, is_featured, is_new_arrival, is_active
 ) VALUES (
-    'p7777777-7777-7777-7777-777777777777',
+    'd7777777-7777-7777-7777-777777777777',
     'c7777777-7777-7777-7777-777777777777',
     'Handcrafted Teakwood Home Mandir / Pooja Unit',
     'handcrafted-teakwood-home-mandir',
@@ -213,4 +213,4 @@ INSERT INTO products (
 ) ON CONFLICT (id) DO NOTHING;
 
 INSERT INTO product_images (product_id, image_url, alt_text, is_cover, display_order) VALUES
-('p7777777-7777-7777-7777-777777777777', 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=1200&q=80', 'Handcrafted Custom Wooden Unit', true, 1);
+('d7777777-7777-7777-7777-777777777777', 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=1200&q=80', 'Handcrafted Custom Wooden Unit', true, 1);
