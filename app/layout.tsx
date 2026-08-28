@@ -44,14 +44,21 @@ export default async function RootLayout({
   const schema = generateLocalBusinessSchema(settings);
 
   return (
-    <html lang="en" className={`${playfair.variable} ${plusJakarta.variable}`}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${playfair.variable} ${plusJakarta.variable}`}
+    >
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       </head>
-      <body className="min-h-screen flex flex-col font-sans bg-[#FAF8F5] text-charcoal-900">
+      <body
+        suppressHydrationWarning
+        className="min-h-screen flex flex-col font-sans bg-[#FAF8F5] text-charcoal-900"
+      >
         {children}
       </body>
     </html>
